@@ -84,3 +84,23 @@ nav section {
     height: 1.8rem;
 
 }
+.nav__right-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5.4rem;
+    height: 2.2rem;
+    background-color: rgb(229, 9, 20);
+    color: rgb(255, 255, 255);
+    border: 2px solid rgb(229, 9, 20);
+    border-radius: 0.3rem ;
+    cursor: pointer;
+    margin-top: 7px;
+    margin-right: -35px;
+
+}
+.nav__right-button:hover {
+    background-color: rgb(255, 255, 255);
+    color: #000;
+    border: rgb(255, 255, 255);
+}

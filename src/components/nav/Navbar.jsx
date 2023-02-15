@@ -71,7 +71,6 @@ function Navbar() {
               fill="currentColor"
             ></path>
           </svg>
-          <p>Children</p>
           <svg
             width="24"
             height="24"
@@ -91,7 +90,7 @@ function Navbar() {
             src="https://cdn-icons-png.flaticon.com/128/2202/2202112.png"
             alt="avatar"
           />
-          <span>🔽</span>
+          <button className="nav__right-button">Sign In</button>
         </div>
       </section>
     </nav>
