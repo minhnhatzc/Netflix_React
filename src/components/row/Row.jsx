@@ -12,17 +12,19 @@ function Row(props) {
     };
     useEffect(() => {
         fetchMovies();
-    }, [])
+    }, [props.url])
 
   return (
     <div className='row__wrapper'>
     <h3 className='row__title'>{props.title}</h3>
         <div className='row__card'>
             {movies.map((el) => {
-                return <Card
+                return (
+                    <Card
                     title= {el.title}
-                    poster = {el.backdrop_path}
-                    id = {el.id}/>;
+                    poster = {el.poster}
+                    backdrop_Path= {el.backdrop_path}
+                    id = {el.id}/>);
             })}
         </div>
     </div>

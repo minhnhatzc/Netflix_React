@@ -20,7 +20,6 @@
     align-content: center;
     height: 130px;
     color: white;
-    overflow-x: scroll;
 }
 
 .row__card::-webkit-scrollbar {

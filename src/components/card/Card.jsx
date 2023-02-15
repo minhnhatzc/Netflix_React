@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 
 function Card(props) {
-  const imageUrl = `https://image.tmdb.org/t/p/original/${props.poster}`;
+  const imageUrl = `https://image.tmdb.org/t/p/original/${props.backdrop_Path}`;
   const [isHovered, setIsHovered] = useState(false);
   const [video, setVideo] = useState(null);
   const youtubeUrl = `https://www.youtube.com/embed/`;
@@ -43,9 +43,9 @@ function Card(props) {
     }}
     onMouseEnter={handleMouseEnter}
     onMouseLeave={handleMouseLeave}>
-      {!isHovered &&
-        <img src={imageUrl} alt={`img-${props.id}`} />}
-        {isHovered && (
+      {!isHovered && <img src={imageUrl} alt={`img-${props.id}`} />}
+        {
+          isHovered && (
         <div className="card__info">
         <iframe
           width="100%"
@@ -56,10 +56,9 @@ function Card(props) {
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen
         ></iframe>
-        <h9>{props.title}</h9>
+
         </div>
-        )
-        }
+        )}
     </div>
   );
 }
