@@ -27,7 +27,7 @@ function Content() {
   <div className="content__wrapper">
   {RowData.map((el)=> {
     return <Row title={el.title} url ={el.url}/>
-  })};
+  })}
   </div>
   )
 }

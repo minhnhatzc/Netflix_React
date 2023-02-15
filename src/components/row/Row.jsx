@@ -19,12 +19,10 @@ function Row(props) {
     <h3 className='row__title'>{props.title}</h3>
         <div className='row__card'>
             {movies.map((el) => {
-                return (
-                    <Card
+                return <Card
                     title= {el.title}
-                    poster = {el.poster_path}
-                    />
-                );
+                    poster = {el.backdrop_path}
+                    id = {el.id}/>;
             })}
         </div>
     </div>
