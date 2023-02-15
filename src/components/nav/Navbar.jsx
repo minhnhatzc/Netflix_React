@@ -17,8 +17,27 @@ function Navbar() {
             window.removeEventListener("scroll", transitionNavBar);
         };
     }, []);
+    const [show, setShow] = useState(false);
+
+    const scrollHandler = () => {
+      if(window.scrollY > 10) {
+        setShow(true);
+    } else {
+      setShow(false);
+    }
+  };
+    useEffect(() => {
+      window.addEventListener("scroll", scrollHandler);
+      return() => {
+        window.removeEventListener("scroll", scrollHandler);
+      };
+    }, []);
   return (
-    <nav className={`${background ? 'nav__back' : 'nav__transparent'}`}>
+    <nav
+    style={{
+      backgroundColor: show ? 'rgb(20, 20, 20)' : 'transparent',
+    }}
+    className={`${background ? 'nav__back' : 'nav__transparent'}`}>
       <section>
         <div className="nav__left">
           <img
