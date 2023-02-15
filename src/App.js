@@ -1,7 +1,5 @@
 import "./App.css";
-import Navbar from "./components/nav/Navbar";
-import Header from "./components/header/Header";
-import Content from "./components/content/Content";
+import Home from "./page/Home";
 import axios from "axios";
 
 axios.defaults.baseURL = "https://api.themoviedb.org/3";
@@ -11,9 +9,7 @@ axios.defaults.params= {
 function App() {
   return (
     <div>
-      <Navbar />
-      <Header />
-      <Content/>
+    <Home/>
     </div>
   );
 }
