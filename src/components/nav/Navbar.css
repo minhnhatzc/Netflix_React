@@ -1,0 +1,86 @@
+@keyframes black__nav {
+    0% {
+        background-color: transparent;
+    }
+    100% {
+        background: #141414;
+    }
+}
+
+@keyframes transparent__nav {
+    0% {
+        background-color: transparent;
+    }
+    100% {
+        background: #141414;
+    }
+}
+
+.nav__back {
+    animation: black__nav 0.6s ease-in-out forwards;
+}
+
+.nav__transparent {
+    animation: transparent__nav 0.6s ease-in-out forwards;
+}
+
+nav {
+    color: #fff;
+    height: 8vh;
+    width: 100vw;
+    position: fixed;
+    z-index: 1000;
+    font-size: 0.9rem;
+
+}
+nav section {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-inline: auto;
+    flex-direction: row;
+
+}
+.nav__left {
+    display: flex;
+    width: 85%;
+
+}
+.nav__left-logo {
+    height: 1.8rem;
+
+}
+
+.nav__left-link {
+    margin-left: 1.2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav__left-link a {
+    text-decoration: none;
+    color: #fff;
+    margin-left: 1rem;
+    transition: color 0.5s;
+    font-size: 0.8rem;
+    line-height: 1.2;
+}
+.nav__left-link a:active {
+    color: red;
+}
+.nav__left-link a:hover {
+    color: rgb(156, 156, 156);
+}
+
+.nav__right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 10rem;
+    flex: 1;
+}
+.nav__right-avatar {
+    height: 1.8rem;
+
+}
