@@ -1,8 +1,10 @@
 import React from "react";
 import "./Navbar.css";
 import { useEffect, useState } from "react";
+import { connect } from "react-redux";
+import { signInAPI } from "../../action";
 
-function Navbar() {
+function Navbar(props) {
     const [background, setBackground] =useState(false);
     const transitionNavBar = () => {
         if(window.scrollY > 1) {
@@ -90,11 +92,21 @@ function Navbar() {
             src="https://cdn-icons-png.flaticon.com/128/2202/2202112.png"
             alt="avatar"
           />
-          <button className="nav__right-button">Sign In</button>
+          <button className="nav__right-button" onClick={() => props.signIn()}>Sign In</button>
         </div>
       </section>
     </nav>
   );
 }
 
-export default Navbar;
+const mapStateToProps = (state) => {
+  return {
+    user: state.userState.user,
+  };
+};
+
+const mapDispatchToProps = (dispatch) => ({
+  signIn: () => dispatch(signInAPI()),
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(Navbar);
