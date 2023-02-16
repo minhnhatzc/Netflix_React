@@ -7,6 +7,17 @@ export const setUser = (payload) => ({
     user: payload,
 })
 
+
+export function getUserAuth() {
+	return (dispatch) => {
+		auth.onAuthStateChanged(async (user) => {
+			if(user) {
+				dispatch(setUser(user));
+			}
+	});
+	};
+}
+
 export function signInAPI() {
     return (dispath) => {
         auth.signInWithPopup(provider)
