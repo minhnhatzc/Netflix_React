@@ -36,7 +36,7 @@ function Header() {
                 </svg>
                 Play
               </button>
-              <button className='header__button my__list_button'>
+              <button className='header__button my__list-button'>
                 <svg
                   width='24'
                   height='24'

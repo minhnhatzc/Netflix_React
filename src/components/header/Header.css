@@ -21,86 +21,80 @@ header {
   box-shadow: 0px 0px 0px;
 }
 .header img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 .header__content {
-    margin-left: 5vw;
-    padding-top: 15vw;
-    color: white;
-    line-height: 1.2;
+  margin-left: 5vw;
+  padding-top: 15vw;
+  color: white;
+  line-height: 1.2;
 }
 
 .header__billboard {
-    position: relative;
-    margin-bottom: 1.2vw;
+  position: relative;
+  margin-bottom: 1.2vw;
 }
 
 .header__billboard img {
-    width: 23vw;
+  width: 23vw;
 }
 
 .header__description {
-    width: 50%;
-    height: 10vh;
-    text-overflow: clip;
-    font-size: 1.1vw;
-    font-weight: 500;
-    text-shadow: 2px 2px 4px rgb(0 0 0 / 45%);
-    margin-bottom: 0.1vw;
-    position: relative;
+  width: 50%;
+  height: 10vh;
+  text-overflow: clip;
+  font-size: 1.1vw;
+  font-weight: 500;
+  text-shadow: 2px 2px 4px rgb(0 0 0 / 45%);
+  margin-bottom: 0.1vw;
+  position: relative;
 }
 
-
 .header__buttons {
-    display: flex;
-    margin-top: 1.2vw;
+  display: flex;
+  margin-top: 1.2vw;
 }
 
 .header__button {
-    border-radius: 4px;
-    border: none;
-    font-size: 1.2rem;
-    font-weight: 600;
-    padding: 0.7rem;
-    padding-left: 2rem;
-    padding-right: 2.5rem;
-    margin-top: 0.6rem;
-    z-index: 1;
+  border-radius: 4px;
+  border: none;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 0.7rem;
+  padding-left: 2rem;
+  padding-right: 2.5rem;
+  margin-top: 0.6rem;
+  z-index: 1;
 
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
 }
 
 .header__button svg {
-    margin-right: 0.5rem;
-
+  margin-right: 0.5rem;
 }
 
 .play__button {
-    background-color: #fff;
-    color: #000;
-    margin-right: 1rem;
+  background-color: #fff;
+  color: #000;
+  margin-right: 1rem;
 }
 
 .play__button:hover {
-    background-color: #e6e6e6;
+  background-color: #1a1919;
+  color: white;
 }
 
 .my_list__button {
-    background-color: rgba(109,
-            109,
-            110,
-            0.7);
-    color: #fff;
+  background-color: rgba(109, 109, 110, 0.7);
+  color: #fff;
 }
 
-.my__list__button:hover {
-    background-color: rgba(109,
-            109,
-            110,
-            0.4);
+.my__list-button:hover {
+  background-color:#1a1919;
+  color: white;
 }
